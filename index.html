@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crulamidev</title>
+    <style>
+        .parrafo1
+        {
+            background-color: blue;
+            color:white          
+        }
+
+    </style>
+   
+</head>
+<body>
+
+    <!-- header** main **footer -->
+    <header>
+        <h2>Inicio</h2>
+        <h2>Proyectos</h2>
+        <h2>Contactenos</h2>
+    <!-- Menu de navegacón logo -->
+    </header>
+    <!-- contenido diferente al principal aside -->
+    <aside>Sigueme en twiter</aside>
+    <!-- <class atributo para dar estilo desde css
+        id sirve para seleccionar el elemento> -->
+
+        <h1>crualmidev</h1>
+
+        <h2>Lenguajes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione qui voluptatem sapiente soluta non? Ab totam aspernatur ea atque dicta dolor magnam hic, excepturi sed, sapiente beatae, enim accusamus nisi.</p>
+        <h2>Python</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ad fugiat iure quas eaque omnis optio ipsam harum sit qui quisquam sapiente quo nesciunt laborum suscipit, facilis facere! Sapiente, asperiores?</p>
+        <h3>Django</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis quasi esse impedit, unde veritatis eum quis adipisci iure, atque optio. Maiores itaque explicabo corporis eos veniam ipsa nihil numquam.
+        </p>
+        <!-- Elementos de linea -->
+        <p><em>EL dinero </em>es <strong> importanete </strong>pero la salud es lo mas importante       
+          <br>   <small>prueba menos importante</small>    
+             <!-- wbr corta el texto donde se coloque la eqtiqueta por ejemplo url www.google.com/<wbr>csas/<wbr>master/<wbr>sdasdas -->
+         </p>
+        <section>
+            <h2>Noticias</h2>
+            <nav>
+                <a href="#n1">Notica 1</a>
+                <a href="#n2">Notica 2</a>
+                <a href="#n3">Notica 3</a>
+            </nav>
+            <article>
+                <header>
+                    <h3 id="n1">Noticia 1</h3>
+                </header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus beatae quasi magni blanditiis commodi expedita eaque? Cupiditate doloribus aspernatur, iusto ullam quasi in. Voluptates voluptatem reprehenderit veritatis neque qui harum?</p>
+                <footer><h4>Link</h4></footer>
+            </article>
+            <article>
+                <header>
+                    <h3 id="n2">Noticia 2</h3>
+                </header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus beatae quasi magni blanditiis commodi expedita eaque? Cupiditate doloribus aspernatur, iusto ullam quasi in. Voluptates voluptatem reprehenderit veritatis neque qui harum?</p>
+                <footer><h4>Link</h4></footer>
+            </article>
+            <article>
+                <header>
+                    <h3 id="n3" title="las mejores cosas de la vida toman tiempo">Noticia 3</h3>
+                <!-- permite un pequeño titulo de un contenido -->
+                <!-- data  permite insertar datos dentro de una etiqueta -->
+                <p id= "pass2" data-prueba="pruebas de data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus beatae quasi magni blanditiis commodi expedita eaque? Cupiditate doloribus aspernatur, iusto ullam quasi in. Voluptates voluptatem reprehenderit veritatis neque qui harum?</p>
+                <footer>
+                    <h4>Link</h4>
+                </footer>
+            </article>
+        </section>
+        <!-- data-* permite guardar algun valor en la etiqueta html-->
+        <article>
+            <h2>navegadores</h2>
+            <section>
+                <header>
+                    <h3>Chrome</h3>
+                </header>
+                <p class="parrafo1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quod. Quae eos sunt hic totam laboriosam nobis recusandae cumque tempore minima? Aliquid perspiciatis, possimus natus nam sit eum incidunt modi?
+                </p>
+                <footer>
+                    <h4>www.google.com</h4>
+                </footer>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <h3 id="pass">crulami 2021</h3>
+        <!-- el id permite poder seleccionar elemento via javascript 
+        identificador debe ser unico-->
+    </footer>
+    <script>
+            const p = document.getElementById("pass")
+            console.log(p.textContent)
+            const b = document.getElementById("pass2")
+            console.log(pass2.dataset.prueba)
+    </script>
+    <a href="/pagina2/Index.html">Go to prueba2</a>
+    <a href="https://www.google.com/" target="_Blank">Go to google</a>
+    <a href="/pagina2/Index.html" download>prueba 3</a>
+</body>
+</html>
+
+
+<!-- br forzar salto de linea
+wbr salto de linea
+sup para colocar elevado
+sub abajo
+-->
+
+<!-- atributos  valores adicionales  atributo ="valor ejemplo lang="es"
+    atibutos bleanos  atributo no es necesario colocar un valor" -->
