@@ -10,7 +10,43 @@
             background-color: blue;
             color:white          
         }
-
+        /* td */
+        {
+            background-color: steelblue;
+            color: whitesmoke;
+        }
+        /* no es la manera de utlizar css */
+        col:nth-child(2)
+        {
+            background-color: slategray;
+            color: whitesmoke;
+        }
+        col:nth-child(6)
+        {
+            background-color: rgb(207, 60, 68);
+            color: whitesmoke;
+        }
+        col
+        {
+            background-color: rgb(20, 205, 211);
+            color: whitesmoke;
+        }
+        th 
+        {
+            background-color: rgb(80, 58, 206);
+        }
+        caption
+        {
+            background-color: blueviolet;
+        }
+        .pie
+        {
+            background-color: rgb(176, 179, 42);
+        }
+        .recreo
+        {
+            background-color: rgb(192, 211, 22);
+        }
     </style>
    
 </head>
@@ -90,6 +126,127 @@
                 </footer>
             </section>
         </article>
+        <h1>List</h1>
+        <!-- ul Listas(listas  de compra) desordenas ol listas ordenadas (top 10) dl lista de deficiones -->
+        <!-- semantica correcta de un menu -->
+        <nav>
+            <ul>
+                <li><a href="#n1">Noticia 1</a></li>
+                <li><a href="#n2">Noticia 2</a></li>
+                <li><a href="#n3">Noticia 3</a></li>
+                <li><a href="#n4">Noticia 4</a></li>
+            </ul>
+        </nav>
+        <!--  listas desordanadas -->
+        <!--  -->
+        <h2>Lista de la compra</h2>
+        <ul type = "square">
+            <li>pan</li>
+            <li>leche</li>
+            <li>huevos</li>
+            <li>panela</li>
+        </ul>
+        <h2>Orden de aprendizaje desarrollo web</h2>
+<!-- type tipo de nomenclatura, start de donde inicia -->
+        <ol type="A" start="B">
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ol>
+        <!-- listas de definición -->
+        <h2>Lenguajes para el desarrolo web</h2>
+        <dl>
+            <dt>html</dt>
+            <dd>hipert text markup lenguage: es un lenguaje de marcado que se usa para estrructurar datos en u apagina web</dd>
+            <dt>css</dt>
+            <dd>cascade style sheets: es un lenguaje de diseño que se utiliza para dar estilos al html</dd>
+            <dt>javascript</dt>
+            <dd>es un lenguaje de programación para dar interactividad a un sitio web entre otras</dd>
+
+        </dl>
+        <!-- listas anidadas -->
+        <h2>Listas anidadas</h2>
+        <h1>Tablas</h1>
+        <!--  semantica d euna tabla -->
+        <table>
+            <!-- rowspan sirve para que la selda ocupe mas de una fila valor por defecto 1
+                colspan sirve para que una celda ocupe mas de columna valor por defecto 1
+             -->
+            <!-- titulo de la tabla -->
+            <caption>HORARIO DE CLASES</caption>
+            <!-- cabecera de la pagina -->
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                </tr>
+            </thead>
+            <!-- fila de ua tabla -->
+            <!-- cuerpo de la tabla tbody mienstra que este un thead -->
+        <tbody>
+            <tr>
+                <!-- contenido de las celdas -->
+                <td>8:30 - 9:30</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+            </tr>
+            <tr>
+                <!-- contenido de las celdas -->
+                <td>8:30 - 9:30</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+            </tr>
+            <tr>
+                <!-- contenido de las celdas -->
+                <td>8:30 - 9:30</td>
+                <td class="recreo" colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <!-- contenido de las celdas -->
+                <td>8:30 - 9:30</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Sociales</td>
+                <td>Sociales</td>
+                <td>Sociales</td>
+                <td>Sociales</td>
+            </tr>
+            <tr>
+                <!-- contenido de las celdas -->
+                <td>8:30 - 9:30</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Sociales</td>
+            </tr>
+        </tbody>
+        <!-- un pie de pagian opcional -->
+        <tfoot>
+            <tr>
+                <td class="pie" colspan="5">Total asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+        </table>
+        
+
     </main>
     <footer>
         <h3 id="pass">crulami 2021</h3>
